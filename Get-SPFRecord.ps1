@@ -22,7 +22,7 @@
             $SPFValue       = $Record.Split(":")[1]
             $SPFDescription = ""
 
-            # SPF Record type descriptions provided by Google (https://support.google.com/a/answer/10683907?hl=en#:~:text=An%20SPF%20record%20is%20a,of%20a%20DNS%20TXT%20record.)
+            # SPF Record type descriptions provided by Google (https://support.google.com/a/answer/10683907)
             Switch ($SPFType) {
                 "ip4"     {$SPFDescription = "Authorize mail servers by IPv4 address or address range. "}
                 "ip6"     {$SPFDescription = "Authorize mail servers by IPv6 address or address range."}
